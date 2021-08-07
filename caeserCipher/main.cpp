@@ -25,10 +25,6 @@ int main() {
         if (ch >= 97 and ch <= 122) {
             // Edit lowercase letters
             ch = (((ch - 97) + offset) % 26) + 97;
-            ch -= 97;
-            ch += offset;
-            ch %= 26;
-            ch += 97;
         } else if (ch >= 65 and ch <= 90) {
             // Edit uppercase letters
             ch = (((ch - 65) + offset) % 26) + 65;
